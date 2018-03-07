@@ -1,0 +1,8 @@
+body{
+	font-family: avenir;
+}
+
+.time, .dag, .begroeting{
+	text-align: center;
+	font-size: 40px;
+}
