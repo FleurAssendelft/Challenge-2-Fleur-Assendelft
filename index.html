@@ -46,19 +46,20 @@
 		if(time >= 12 ){
 			document.getElementById('greeting').innerHTML = "Goedemiddag " + name;
 		}
+
+	function task(){
+		var d = new Date();
+		var time = d.getHours();
+	}
 	}
 </script>
 
 </head>
 
 <body onload="startTime();timeOfTheDay();greeting()"; >
-	<p class="begroeting" id="greeting"></p>
 	<p  class="time" id="txt"></p>
+	<p class="begroeting" id="greeting"></p>
 	<p class="dag" id="day"></p>
 	 
-
-
-
-
 </body>
 </html>

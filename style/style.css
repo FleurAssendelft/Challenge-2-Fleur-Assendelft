@@ -1,8 +1,15 @@
 body{
 	font-family: avenir;
+	text-align: center;
 }
 
-.time, .dag, .begroeting{
-	text-align: center;
-	font-size: 40px;
+.dag, .begroeting{
+	font-size: 25px;
+	margin-bottom: -30px;
+}
+
+
+.time{
+	font-size: 80px;
+	margin-bottom: -40px;
 }
