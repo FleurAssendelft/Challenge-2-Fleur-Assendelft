@@ -142,11 +142,12 @@
             document.getElementById('greeting').style.color = "white";
             document.getElementById('day').style.color = "white";
         }
-
-
-
     }
+    var message = document.getElementById('greeting');
 
+    var tl1 = new TimelineMax({repeat: -1});
+    tl1.to(message, 8, {right: 200});
+    
     startTime();
     timeOfTheDay();
     greeting(); 

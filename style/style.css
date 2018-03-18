@@ -11,37 +11,52 @@
 
 .begroeting{
 	grid-area: groet;
+	font-size: 35px;
+	position: relative;
 }
 
 .time{
 	grid-area: tijd;
+	font-size: 85px;
+	margin: 0px;
 }
 
 .dag{
 	grid-area: dag;
+	font-size: 18px;
+	margin: 0px;
 }
 
 .taak{
 	grid-area: taak;
+	font-size: 40px;
+	margin-top: 20%;
 }
 
 .options{
 	grid-area: optie;
 }
 
+/* opmaak pagina*/
+
 body{
 	font-family: avenir;
 	text-align: center;
 }
 
-.dag, .begroeting{
-	font-size: 25px;
+
+
+/*breakfast*/
+h2{
+	font-family: LillyBelle;
+}
+
+.breakfast{
+	width: 95%;
+	padding: 2.5%;
 }
 
 
-.time{
-	font-size: 80px;
-}
 
 
 
