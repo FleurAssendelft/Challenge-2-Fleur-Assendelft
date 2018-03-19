@@ -88,60 +88,99 @@
             document.body.style.backgroundColor = "#ffd699";
             document.getElementById('taak').innerHTML = "It's time to wake up!";
             document.getElementById('titel').innerHTML = "What to wear?";
+            document.getElementById('fotoeen').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/grijs.jpg";
+            document.getElementById('fototwee').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/groen.jpg";
+            document.getElementById('fotodrie').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/blouse.jpeg";
         }
         else if (time >= 8 && time < 9){
             document.body.style.backgroundColor = "#99ccff";
             document.getElementById('taak').innerHTML = "Breakfast time!";
             document.getElementById('titel').innerHTML = "Breakfast ideas";
+            document.getElementById('fotoeen').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/pannekoek.jpeg";
+            document.getElementById('fototwee').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/muesli.jpg";
+            document.getElementById('fotodrie').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/croissant.jpg";
+
         }
          else if (time >= 9 && time < 10){
             document.body.style.backgroundColor = "#99ccff";
-            document.getElementById('taak').innerHTML = "Ready to go to work";
+            document.getElementById('taak').innerHTML = "Ready to go to work!";
+            document.getElementById('titel').innerHTML = "How to go to work?";
+            document.getElementById('fotoeen').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/car.jpeg";
+            document.getElementById('fototwee').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/bike.jpeg";
+            document.getElementById('fotodrie').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/train.jpeg";
         }
         else if (time >= 10 && time < 12){
             document.body.style.backgroundColor = "#b3daff";
             document.getElementById('taak').innerHTML = "Let's work!";
-            document.getElementById('titel').innerHTML = "Task of the day";
+            document.getElementById('titel').innerHTML = "Get behind your desk and work";
+              document.getElementById('fotoeen').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/desk.jpeg";
+            document.getElementById('fototwee').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/lamp.jpeg";
+            document.getElementById('fotodrie').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/working.jpeg";
         }
-        else if (time >= 12 && time < 14){
+        else if (time >= 12 && time < 13){
             document.body.style.backgroundColor = "#cce5ff";
             document.getElementById('taak').innerHTML = "Lunch time!";
             document.getElementById('titel').innerHTML = "Lunch ideas";
+            document.getElementById('fotoeen').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/tosti.jpg";
+            document.getElementById('fototwee').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/boxes.jpg";
+            document.getElementById('fotodrie').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/kip.jpg";
+
         }
-        else if (time >= 14 && time < 15){
+        else if (time >= 13 && time < 15){
             document.body.style.backgroundColor = "#b3d7ff";
             document.getElementById('taak').innerHTML = "Get back to work";
-            document.getElementById('titel').innerHTML = "To do list";
+            document.getElementById('titel').innerHTML = "Check your to do list";
+             document.getElementById('fotoeen').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/todo.jpeg";
+            document.getElementById('fototwee').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/week.jpg";
+            document.getElementById('fotodrie').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/book.jpg";
         }
         else if (time >= 15 && time < 16){
             document.body.style.backgroundColor = "#99ccff";
             document.getElementById('taak').innerHTML = "Time for a snack!";
             document.getElementById('titel').innerHTML = "Snack ideas";
+            document.getElementById('fotoeen').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/popcorn.jpg";
+            document.getElementById('fototwee').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/fruit.jpeg";
+            document.getElementById('fotodrie').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/graan.jpg";
         }
          else if (time >= 16 && time < 18){
             document.body.style.backgroundColor = "#99ccff";
             document.getElementById('taak').innerHTML = "Let's go for a workout!";
             document.getElementById('titel').innerHTML = "Workout suggestions";
+            document.getElementById('fotoeen').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/gym.jpeg";
+            document.getElementById('fototwee').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/running.jpeg";
+            document.getElementById('fotodrie').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/walking.jpeg";
         }
         else if (time >= 18 && time < 19){
             document.body.style.backgroundColor = "#ffcc66";
             document.getElementById('taak').innerHTML = "Time for a dinner!";
             document.getElementById('titel').innerHTML = "Dinner ideas";
+            document.getElementById('fotoeen').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/salad.jpg";
+            document.getElementById('fototwee').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/wine.jpg";
+            document.getElementById('fotodrie').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/pizza.jpeg";
         }
         else if (time >= 19 && time < 20){
             document.body.style.backgroundColor = "#ffb3d9";
             document.getElementById('taak').innerHTML = "Time to relax with some tea or coffee";
             document.getElementById('titel').innerHTML = "Reflect on what you did today";
+            document.getElementById('fotoeen').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/coffee.jpeg";
+            document.getElementById('fototwee').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/tea.jpeg";
+            document.getElementById('fotodrie').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/chocolatemilk.jpeg";
         }
         else if (time >= 20 && time < 22){
             document.body.style.backgroundColor = "#0047b3";
             document.getElementById('taak').innerHTML = "Let's watch a movie or read a book!";
             document.getElementById('titel').innerHTML = "Book reccomendations";
+             document.getElementById('fotoeen').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/book.jpeg";
+            document.getElementById('fototwee').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/reading.jpeg";
+            document.getElementById('fotodrie').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/movie.jpeg";
         }
         else if (time >= 22 && time < 23){
             document.body.style.backgroundColor = "#003380";
              document.getElementById('taak').innerHTML = "Get ready for bed!";
              document.getElementById('titel').innerHTML = "Check your to do list for tomorrow";
+              document.getElementById('fotoeen').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/deadline.jpeg";
+            document.getElementById('fototwee').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/meeting.jpeg";
+            document.getElementById('fotodrie').src= "../Challenge-2-Fleur-Assendelft/afbeeldingen/dinner.jpg";
         }
          else if (time >= 23 && time < 24){
             document.body.style.backgroundColor = "#003380";
