@@ -6,35 +6,51 @@
 		"tijd"
 		"dag"
 		"taak"
-		 "optie";
+		"knop"
+		"optieeen"
+		"optietwee"
+		"optiedrie";
 }
 
 .begroeting{
 	grid-area: groet;
 	font-size: 35px;
+	font-family: Bitter;
 	position: relative;
+	text-align: right;
 }
 
 .time{
 	grid-area: tijd;
 	font-size: 85px;
+	font-family: La Viola;
 	margin: 0px;
 }
 
 .dag{
 	grid-area: dag;
 	font-size: 18px;
+	font-family: fox in the snow;
 	margin: 0px;
 }
 
 .taak{
 	grid-area: taak;
 	font-size: 40px;
-	margin-top: 20%;
+	font-family: Din pro;
 }
 
-.options{
-	grid-area: optie;
+#titel{
+	grid-area: knop;
+}
+.optie1{
+	grid-area: optieeen;
+}
+.optie2{
+	grid-area:optietwee;
+}
+.optie3{
+	grid-area:optiedrie;
 }
 
 /* opmaak pagina*/
@@ -47,13 +63,95 @@ body{
 
 
 /*breakfast*/
-h2{
-	font-family: LillyBelle;
-}
-
-.breakfast{
+#titel{
+	font-family: Bitter;
+	font-size: 20px;
+	background-color: white;
+	color: grey;
 	width: 95%;
 	padding: 2.5%;
+	margin: auto;
+	border-radius: 5px;
+	border:none;
+}
+
+/*#titel:hover{
+	background-color: grey;
+	color: white;
+}*/
+
+.foto{
+	width: 91%;
+	padding: 4%;
+	margin-top: 4%;
+	background-color: white;
+	
+}
+
+
+@media only screen and (min-width: 500px) {
+	.container{
+		grid-template-areas:
+			"groet"
+			"tijd"
+			"dag"
+			"taak"
+			"knop"
+			"optieeen"
+			"optietwee"
+			"optiedrie";
+	}
+	.foto{
+		width: 80%;
+	}
+
+	#titel{
+		font-size: 20px;
+		width: 85%;
+		padding: 2.5%;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin: auto;
+		border-radius: 5px;
+		border:none; 
+	}
+}
+
+@media only screen and (min-width: 725px) {
+	.container{
+		grid-template-areas:
+			"groet groet groet"
+			"tijd tijd tijd"
+			"dag dag dag"
+			"taak taak taak"
+			"knop knop knop"
+			"optieeen optietwee optiedrie";
+	}
+	#titel{
+		font-size: 20px;
+		width: 91.5%;
+		padding: 2%;
+		margin-left: 2.25%;
+		margin-right: 2.25%;
+		margin: auto;
+		border-radius: 5px;
+		border:none; 
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.container{
+		grid-template-areas:
+			"groet groet groet"
+			"tijd tijd tijd"
+			"dag dag dag"
+			"taak taak taak"
+			"knop knop knop"
+			"optieeen optietwee optiedrie";
+	}
+	.foto{
+		width: 80%;
+	}
 }
 
 

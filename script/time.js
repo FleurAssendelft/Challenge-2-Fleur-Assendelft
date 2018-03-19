@@ -42,7 +42,7 @@
 
         var dag = weekday[today.getDay()];
         var maand = month[today.getMonth()];
-        document.getElementById("day").innerHTML = 'Today it is ' + dag + ', ' + maand + ' ' + date ;
+        document.getElementById("day").innerHTML = "Today it's " + dag + ", " + maand + " "  + date ;
     }
 
     function greeting(){
@@ -67,26 +67,32 @@
         if (time >= 0 && time < 2){
             document.body.style.backgroundColor = "#001f4d";
             document.getElementById('taak').innerHTML = "Sleep time!";
+            document.getElementById('titel').innerHTML = "Keep on dreaming";
         }
          else if (time >= 2 && time < 4){
             document.body.style.backgroundColor = "#003380";
             document.getElementById('taak').innerHTML = "Sleep time!";
+            document.getElementById('titel').innerHTML = "Keep on dreaming";
         }
          else if (time >= 4 && time < 6){
             document.body.style.backgroundColor = "#0047b3";
             document.getElementById('taak').innerHTML = "Sleep time!";
+            document.getElementById('titel').innerHTML = "Keep on dreaming";
         }
          else if (time >= 6 && time < 7){
             document.body.style.backgroundColor = "#4da6ff";
             document.getElementById('taak').innerHTML = "Sleep time!";
+            document.getElementById('titel').innerHTML = "Keep on dreaming";
         }
         else if (time >= 7 && time < 8){
             document.body.style.backgroundColor = "#ffd699";
             document.getElementById('taak').innerHTML = "It's time to wake up!";
+            document.getElementById('titel').innerHTML = "What to wear?";
         }
         else if (time >= 8 && time < 9){
             document.body.style.backgroundColor = "#99ccff";
             document.getElementById('taak').innerHTML = "Breakfast time!";
+            document.getElementById('titel').innerHTML = "Breakfast ideas";
         }
          else if (time >= 9 && time < 10){
             document.body.style.backgroundColor = "#99ccff";
@@ -94,61 +100,95 @@
         }
         else if (time >= 10 && time < 12){
             document.body.style.backgroundColor = "#b3daff";
+            document.getElementById('taak').innerHTML = "Let's work!";
+            document.getElementById('titel').innerHTML = "Task of the day";
         }
         else if (time >= 12 && time < 14){
             document.body.style.backgroundColor = "#cce5ff";
             document.getElementById('taak').innerHTML = "Lunch time!";
+            document.getElementById('titel').innerHTML = "Lunch ideas";
         }
         else if (time >= 14 && time < 15){
             document.body.style.backgroundColor = "#b3d7ff";
             document.getElementById('taak').innerHTML = "Get back to work";
+            document.getElementById('titel').innerHTML = "To do list";
         }
         else if (time >= 15 && time < 16){
             document.body.style.backgroundColor = "#99ccff";
             document.getElementById('taak').innerHTML = "Time for a snack!";
+            document.getElementById('titel').innerHTML = "Snack ideas";
         }
          else if (time >= 16 && time < 18){
             document.body.style.backgroundColor = "#99ccff";
+            document.getElementById('taak').innerHTML = "Let's go for a workout!";
+            document.getElementById('titel').innerHTML = "Workout suggestions";
         }
         else if (time >= 18 && time < 19){
             document.body.style.backgroundColor = "#ffcc66";
             document.getElementById('taak').innerHTML = "Time for a dinner!";
+            document.getElementById('titel').innerHTML = "Dinner ideas";
         }
         else if (time >= 19 && time < 20){
             document.body.style.backgroundColor = "#ffb3d9";
-            document.getElementById('taak').innerHTML = "Time to relax with some tea of coffee";
-            document.getElementById('txt').style.color = "white";
-            document.getElementById('greeting').style.color = "white";
-            document.getElementById('day').style.color = "white";
+            document.getElementById('taak').innerHTML = "Time to relax with some tea or coffee";
+            document.getElementById('titel').innerHTML = "Reflect on what you did today";
         }
         else if (time >= 20 && time < 22){
             document.body.style.backgroundColor = "#0047b3";
             document.getElementById('taak').innerHTML = "Let's watch a movie or read a book!";
-            document.getElementById('txt').style.color = "white";
-            document.getElementById('greeting').style.color = "white";
-            document.getElementById('day').style.color = "white";
+            document.getElementById('titel').innerHTML = "Book reccomendations";
         }
         else if (time >= 22 && time < 23){
             document.body.style.backgroundColor = "#003380";
              document.getElementById('taak').innerHTML = "Get ready for bed!";
-            document.getElementById('txt').style.color = "white";
-            document.getElementById('greeting').style.color = "white";
-            document.getElementById('day').style.color = "white";
+             document.getElementById('titel').innerHTML = "Check your to do list for tomorrow";
         }
          else if (time >= 23 && time < 24){
             document.body.style.backgroundColor = "#003380";
             document.getElementById('taak').innerHTML = "Sleep time!";
+            document.getElementById('titel').innerHTML = "Everey great dream begins with a dreamer";
+     
+        }
+    }
+
+    function tekst_color() {
+    
+        var message = document.getElementById('greeting');
+
+        var tl1 = new TimelineMax({repeat: -1});
+        tl1.to(message, 10, {right: '100%'});
+
+        var d = new Date();
+        var time = d.getHours();
+
+        if ( time <= 6 || time >= 19  ){
             document.getElementById('txt').style.color = "white";
             document.getElementById('greeting').style.color = "white";
             document.getElementById('day').style.color = "white";
-        }
-    }
-    var message = document.getElementById('greeting');
+            document.getElementById('taak').style.color = "white";
+            }
+        else {
+            document.getElementById('txt').style.color = "grey";
+            document.getElementById('greeting').style.color = "grey";
+            document.getElementById('day').style.color = "grey";
+            document.getElementById('taak').style.color = "grey";
+        } 
+    }  
 
-    var tl1 = new TimelineMax({repeat: -1});
-    tl1.to(message, 8, {right: 200});
+    function voorbeelden() {
+         var knop = document.getElementById('afbeeldingen');
+         if (knop.style.display !== "none"){
+             knop.style.display = "none"
+         }
+         else{
+             knop.style.display = "block"
+         }
+     }
     
+
     startTime();
     timeOfTheDay();
     greeting(); 
     task();
+    tekst_color();
+     //voorbeelden();
