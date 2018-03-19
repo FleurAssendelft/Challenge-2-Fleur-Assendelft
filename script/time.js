@@ -166,6 +166,7 @@
             document.getElementById('greeting').style.color = "white";
             document.getElementById('day').style.color = "white";
             document.getElementById('taak').style.color = "white";
+            document.getElementById('taak').style.color = "white";
             }
         else {
             document.getElementById('txt').style.color = "grey";
